@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+     url : jdbc:mysql://localhost:3306/test?autoReconnect=true&useSSL=false
+     username : root
+     password : mysql
+
+  jpa:
+      hibernate :
+         ddl-auto : update
+      properties :
+         hibernate :
+              default_schema : test
+
+      show-sql : true
